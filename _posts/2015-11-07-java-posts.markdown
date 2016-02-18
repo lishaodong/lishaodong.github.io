@@ -28,8 +28,6 @@ else if(bVariable==false)
 
 Yes, it's redundant, but make it easier to read.never use short names for variables, methods, use the long full name.
 
+read lines without third-party library.
 
-
-[jekyll]:      http://jekyllrb.com
-[jekyll-gh]:   https://github.com/jekyll/jekyll
-[jekyll-help]: https://github.com/jekyll/jekyll-help
+List<String> lines = Files.readAllLines(Paths.get(fileName), Charset.defaultCharset());
