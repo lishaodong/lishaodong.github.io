@@ -4,24 +4,27 @@ body
 	font-family: 'Open Sans', Arial, sans-serif;
 	font-weight: 300;
 	font-size: 14px;
+	height: 538px;
+	width: 375px;
 }
 
 #browser-window{
 	background: url("../gfx/background.png") ;
-	height: %100;
+	height: 538px;
 	width: 335px;
 	padding: 49px 25px 10px 25px;
+    background-repeat: no-repeat;
 	position:relative;
 }
 
 #viewport{
-	overflow:hidden;
+	overflow: auto;
 	height: 420px;
 }
 
 #viewport-content{
+	margin-bottom: 0px;
 	position: relative;
-	bottom: -500px;
 }
 
 .row-chat{

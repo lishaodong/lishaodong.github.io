@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="css/styles.css" type="text/css" />
     
 </head>
-<body>
+<body >
     <script src="js/angular.min.js" type="application/javascript"></script>
     <script src="js/jquery-1.11.1.min.js" type="application/javascript"></script>
     <script src="js/spike-sdk.min.js" type="application/javascript"></script>
@@ -45,8 +45,11 @@
             // Messages, client info & sending
             $scope.messages = [];
             $scope.sendMessage = function () {
-                //server.sendNgChatMessage($scope.messageText);
-                f($scope.messageText);
+                server.sendNgChatMessage($scope.messageText);
+                if ($scope.messageText != "") {
+                    f($scope.messageText);
+                };
+                
                 $scope.messageText = "";
             };
 
@@ -60,9 +63,8 @@
                 $scope.$apply();
 
                 // Animate
-                $("#viewport-content").animate({
-                    bottom: $("#viewport-content").height() - $("#viewport").height()
-                }, 250);
+                var element = document.getElementById("viewport");
+                element.scrollTop = element.scrollHeight;
 
                 // flip the side
                 side = side == 'left' ? 'right' : 'left';
