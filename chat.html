@@ -45,16 +45,16 @@
             // Messages, client info & sending
             $scope.messages = [];
             $scope.sendMessage = function () {
-                server.sendNgChatMessage($scope.messageText);
+                //server.sendNgChatMessage($scope.messageText);
+                f($scope.messageText);
                 $scope.messageText = "";
             };
 
-
-            // Occurs when we receive chat messages
-            server.on('ngChatMessagesInform', function (p) {
+            var f = function (p) {
                 $scope.messages.push({
-                    avatar: "data:image/png;base64," + p.avatar.toBase64(),
-                    text: p.message,
+                    //avatar: "data:image/png;base64," + p.avatar.toBase64(),
+                    //text: p.message,
+                    text:p,
                     side: side
                 });
                 $scope.$apply();
@@ -66,7 +66,9 @@
 
                 // flip the side
                 side = side == 'left' ? 'right' : 'left';
-            });
+            }
+            // Occurs when we receive chat messages
+            server.on('ngChatMessagesInform', f);
 
             // Once connected, we need to join the chat
             server.on('connect', function () {

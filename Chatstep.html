@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<!-- saved from url=(0040)https://chatstep.com/mobile.html#sheldon -->
+<html class=" js flexbox canvas canvastext webgl no-touch geolocation postmessage websqldatabase indexeddb hashchange history draganddrop websockets rgba hsla multiplebgs backgroundsize borderimage borderradius boxshadow textshadow opacity cssanimations csscolumns cssgradients cssreflections csstransforms csstransforms3d csstransitions fontface generatedcontent video audio localstorage sessionstorage webworkers applicationcache svg inlinesvg smil svgclippaths"><!--<![endif]--><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<meta http-equiv="pragma" content="no-cache">
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Chatstep</title>
+        <meta name="description" content="">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
+	<meta name="HandheldFriendly" content="true">
+
+        <link rel="stylesheet" href="./Chatstep_files/c2.css">
+	<!-- Keywords -->
+	
+	<meta name="title" content="Chatstep">
+	<meta name="description" content="Secure / Private / Beautiful Online Group Chat">
+	<meta name="Keywords" content="secure, beautiful, free, online, chat, chatstep, step, private, privacy, encryption, encrypted, group, room, drag, drop, image, share">
+	<!-- Facebook related content optimization -->
+	<meta property="og:url" content="https://chatstep.com/">
+	<meta property="og:title" content="Chatstep">
+	<meta property="og:description" content="Secure / Private / Beautiful Online Group Chat">
+	<meta property="og:image" content="https://chatstep.com/image/lock.png">
+
+	<script async="" src="./Chatstep_files/analytics.js"></script><script>
+		(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+		(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+		m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+		})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+		ga('create', 'UA-59501707-1', 'auto');
+		ga('send', 'pageview');
+
+		window.onerror = function(message, url, lineNumber) {  
+			ga('send', 'event', 'js_err', message + " _IN_ " + url + " _AT_ " + lineNumber + " _UA_ " + navigator.userAgent);
+			return false;
+		};
+	</script>
+    <style id="style-1-cropbar-clipper">/* Copyright 2014 Evernote Corporation. All rights reserved. */
+.en-markup-crop-options {
+    top: 18px !important;
+    left: 50% !important;
+    margin-left: -100px !important;
+    width: 200px !important;
+    border: 2px rgba(255,255,255,.38) solid !important;
+    border-radius: 4px !important;
+}
+
+.en-markup-crop-options div div:first-of-type {
+    margin-left: 0px !important;
+}
+</style></head>
+    <body style="overflow: hidden;">
+        <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+	<div id="front"></div>
+	<div id="chatroom" style="display: inline-flex;">
+		<div id="mobile_header">
+			<img alt="Menu" class="mobile_header_icon" src="./Chatstep_files/menu.png">
+			<span class="mobile_header_text">ChatStep</span>
+		</div>
+		<div id="sidebar">
+			<div class="title">ChatStep</div>
+			<div class="room_title">#sheldon</div>
+			<div id="room_list"><div class="member" color="rgba(255,138,138,1)" member="sheldon"><span class="member_text" sender_id="8cda654d688596186420742f35772f6b5ec81084">sheldon</span><span class="typing_indicator"><span class="dotNoAnim" style="background-color: rgba(255,138,138,1)"></span><span class="dot" style="background-color: rgba(255,138,138,1)"></span></span></div><div class="member" color="rgba(255,190,50,1)" member="joy"><span class="member_text" sender_id="8cda654d688596186420742f35772f6b5ec81084">joy</span><span class="typing_indicator"><span class="dotNoAnim" style="background-color: rgba(255,190,50,1)"></span><span class="dot" style="background-color: rgba(255,190,50,1)"></span></span></div></div>
+			<div class="footer">
+				<span class="footer_button share">
+					<img alt="Share" class="footer_icon" src="./Chatstep_files/share.png">
+					<span class="share_text"> Share Room </span>
+				</span>
+				<span class="footer_button settings_button">
+					<img alt="Settings" class="footer_icon" src="./Chatstep_files/settings.png">
+					<span class="settings_text"> Settings </span>
+				</span>
+				<span class="footer_button report_button">
+					<img title="Report" class="footer_icon" src="./Chatstep_files/report.png">
+					<span class="report_text">Report</span>
+				</span>
+				<span class="footer_button faq">
+					<img title="FAQ" class="footer_icon" src="./Chatstep_files/faq.png">
+					<span class="faq_text">FAQ</span>
+				</span>
+				<span class="footer_button contact">
+					<img title="Contact" class="footer_icon" src="./Chatstep_files/contact.png">
+					<span class="contact_text">Contact Us</span>
+				</span>
+			</div>
+		</div>
+		<div id="rows"><div class="row action_row"><span class="action msg" style="color: undefined">You joined the room 'sheldon'</span></div><div class="row action_row"><span class="action msg" style="color: undefined">You can now privately message individual users by starting your message with the user's name followed by a colon (Example: 'Bill: hey')</span></div><div class="row mine right_align"><span class="msg" style="background-color: rgba(255,190,50,1)">dfdf</span><span class="sender">joy<span class="timestamp">19:47 PM</span></span></div></div>
+		<div id="send_message">
+			<input id="message_box" placeholder="Send Message" type="text"> 
+		</div>
+	</div>
+
+	<div class="modal">
+		<div class="modal_contents"></div>
+		<div class="dismiss noselect">OK</div>
+	</div>
+
+	<div class="room_search_modal">
+		<div class="title">
+			<div class="bold">
+				<span class="count"></span> Public Rooms
+			</div>
+			<div class="red">You must be 18+ to join a Public Room!</div>
+			<div class="red">Please report illegal activity!</div>
+			<!-- <input id="room_search_input" type="text" autofocus> 
+			<span id="room_search_execute_button">Search</span> -->
+		</div>
+		<div class="contents">
+			<table class="table">
+				<tbody class="table_body">
+					<tr>
+						<th>Room Name</th>
+						<th>Members</th>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+		<div class="dismiss">Cancel</div>
+	</div>
+
+	<div class="report">
+		<div class="report_title"><img alt="Report" class="report_icon" src="./Chatstep_files/report.png">Report Room</div>
+		<div class="report_contents">
+			If someone is harassing you, you can mute them by clicking their name on the left sidebar. <br><br>
+			If you are reporting links to a website hosting illegal content, please contact that website directly. <br><br>
+			<textarea class="report_desc" rows="6" cols="25" placeholder="Report Description"></textarea>
+		</div>
+		<div class="report_submit noselect">Report</div>
+		<div class="dismiss noselect">Cancel</div>
+	</div>
+	
+	<div class="settings noselect">
+		<div class="settings_title"><img alt="Settings" class="settings_icon" src="./Chatstep_files/settings.png">Settings</div>
+		<div class="settings_contents">
+			<span class="footer_button align_bubbles">
+				<img title="Align Bubbles" class="footer_icon align_bubbles_icon" src="./Chatstep_files/align.png">
+				<span class="align_bubbles_text">Align Bubbles: On</span>
+			</span>
+			<span class="footer_button my_bubbles">
+				<img title="My Bubbles" class="footer_icon my_bubbles_icon" src="./Chatstep_files/right_my_bubbles.png">
+				<span class="my_bubbles_text">My Bubbles: Right</span>
+			</span>
+			<span class="footer_button sound">
+				<img title="Sound" class="footer_icon sound_icon" src="./Chatstep_files/sound_on.png">
+				<span class="sound_text">Sound: On</span>
+			</span>
+			<span class="footer_button time">
+				<img title="Timestamps" class="footer_icon time_icon" src="./Chatstep_files/time.png">
+				<span class="time_text">Timestamps: Off</span>
+			</span>
+			<span class="footer_button picture">
+				<img title="Picture" class="footer_icon picture_icon" src="./Chatstep_files/picture.png">
+				<span class="picture_text">Images: Off</span>
+			</span>
+			<span class="footer_button autoscroll">
+				<img title="Autoscroll" class="footer_icon autoscroll_icon" data-echo="https://s3.amazonaws.com/chatstep.com/autoscroll.png">
+				<span class="autoscroll_text">Autoscroll: On</span>
+			</span>
+			<span class="footer_button entered_left">
+				<img title="Join Events" class="footer_icon entered_left_icon" data-echo="https://s3.amazonaws.com/chatstep.com/entered_left.png">
+				<span class="entered_left_text">Join Events: On</span>
+			</span>
+			<span class="footer_button download">
+				<img title="Download Transcript" class="footer_icon" src="./Chatstep_files/download.png">
+				<span class="download_transcript_text">Download Transcript</span>
+			</span>
+		</div>
+		<div class="dismiss">OK</div>
+	</div>
+
+	<div class="walkthrough noselect">
+		<div class="walkthrough_title"><img alt="Walkthrough" class="walkthrough_icon" src="./Chatstep_files/walkthrough.png"> New Feature </div>
+		<div class="walkthrough_contents">
+			<div class="walkthrough_example">
+				You can now format messages!
+			</div>
+			<div class="walkthrough_example">
+				<div class="bold">Bold</div>
+				*Hello* <img class="walkthrough_right" src="./Chatstep_files/right_my_bubbles.png"> <span class="bold">Hello</span>
+			</div>
+			<div class="walkthrough_example">
+				<div class="italic">Italic</div>
+				/Hello/ <img class="walkthrough_right" src="./Chatstep_files/right_my_bubbles.png"> <span class="italic">Hello</span>
+			</div>
+			<div class="walkthrough_example">
+				<div class="underline">Underline</div>
+				_Hello_ <img class="walkthrough_right" src="./Chatstep_files/right_my_bubbles.png"> <span class="underline">Hello</span>
+			</div>
+		</div>
+		<div class="dismiss">OK</div>
+	</div>
+
+	<script src="./Chatstep_files/chatstep2.js"></script>
+    
+
+</body><div></div><div></div></html>
