@@ -1,0 +1,93 @@
+/*
+   Tutorial 6  Case 4
+
+   PC Store Style Sheet
+   Author: Joy
+   Date:   2/27/2016
+
+   Filename:         mill.css
+
+
+*/
+
+* {
+    width: 900px;
+    margin: 10px auto;
+}
+
+/* Header styles */
+h1 {
+    clear: left;
+    background: white url(mclogo.jpg) top left no-repeat;
+    height: 90px;
+    text-align: right;
+    font-family: "Lucida Calligraphy", "Apple Chancery", cursive;
+    color: blue;
+    margin: 5px 10px;
+}
+
+/* Navigation Styles */
+nav ul li a {
+    text-decoration: none;
+    color: white;
+
+    height: 50px;
+    line-height: 50px;
+    width: 100%;
+    font-size: 1.2em;
+
+}
+
+nav ul li a:hover {
+    background-color: white;
+    color: #8088e0;
+}
+
+nav ul li {
+    display: block;
+    list-style: none;
+    width: 13%;
+    float: left;
+    margin: 1%;
+    background-color: #8088e0;
+    -moz-border-radius: 50px;
+    -webkit-border-radius: 50px;
+    border-radius: 50px;
+
+    height: 40px;
+    padding-bottom: 5px;
+    text-align: center;
+    letter-spacing: 3px;
+    font-family: 'Trebuchet MS', Helvetica, sans-serif;
+}
+
+nav {
+    float: left;
+    width: 80%;
+    margin: 10px 15px;
+}
+
+/* Section Styles */
+
+p#require {
+    display: block;
+    float: left;
+    font-family: 'Courier New', courier, monospace;
+    font-size: 0.9em;
+    color: indianred;
+}
+
+
+/* Footer Styles */
+
+footer {
+    border-top: 2px solid cornflowerblue;
+    clear: left;
+    margin-top: 20px;
+    padding: 10px 0px;
+}
+
+footer address {
+    font-style: normal;
+    text-align: center;
+}

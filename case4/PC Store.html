@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!--
+    Tutorial 6 Case 4
+    Author: Joy
+    Date: 2/27/2016
+    -->
+    <meta charset="UTF-8">
+    <title>PC Store</title>
+    <link href="mill.css" rel="stylesheet">
+    <link href="oform.css" rel="stylesheet">
+    <script src="modernizr-1.5.js"></script>
+    <script type="text/javascript" src="formsubmit.js"></script>
+
+</head>
+
+<body>
+    <header>
+        <h1>Millennium </br>Production Purchase</h1>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">News</a></li>
+                <li><a href="#">Products</a></li>
+                <li><a href="#">Deals</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+
+    </header>
+
+    <section>
+        <p>All customer contact information are required</p>
+
+        <form id="cOrder" name="cOrder"
+              action="http://www.mill_computers.com/orders/process.cgi"
+              method="post">
+
+    <fieldset id="customerInfo">
+        <legend>Customer Contact Information</legend>
+
+        <label for="fName">First Name</label>
+        <input name="fName" id="fName"
+           required="required"/>
+
+        <label for="lName">Last Name</label>
+        <input name="lName" id="lName"
+           required="required"/>
+
+        <label for="street">Street Address</label>
+        <input name="street" id="street" required="required"/>
+
+        <label for="city">City</label>
+        <input name="city" id="city" placeholder="Worcester" required="required"/>
+
+        <label for="state">State</label>
+        <input name="state" id="state" placeholder="MA" required="required"/>
+
+        <label for="zip">Zip Code</label>
+        <input name="zip" id="zip" required="required"
+           placeholder="nnnnn(-nnnn)"
+            pattern="^\d{5}(\-\d{4})?$"/>
+
+        <label for="phone">Phone number</label>
+        <input name="phone" id="phone" type="tel" required="required"
+           placeholder="(nnn)nnn-nnnn"
+           pattern="^\d{10}$|^(\(\d{3}\)\s*)?\d{3}[\s-]?\d{4}$"/>
+    </fieldset>
+
+    <fieldset id="choice">
+        <legend>Computer choice</legend>
+
+        <img src="processor3.jpg">
+        <label for="pSpeeed">Processor Speed</label>
+        <select id="pSpeeed" name="pSpeed">
+            <option value="type1">3.2 GHz</option>
+            <option value="type2">4 GHz</option>
+            <option value="type3" selected="selected">5.2 GHz</option>
+
+        </select>
+
+        <label for="mem">Memory</label>
+        <select id="mem" name="mem">
+            <option value="typeA">1 GB</option>
+            <option value="typeB">2 GB</option>
+            <option value="typeC">4 GB</option>
+            <option value="typeD" selected="selected">8 GB</option>
+
+        </select>
+
+        <label for="monitor">Monitor Size</label>
+        <select id="monitor" name="monitor">
+            <option value="15">15''</option>
+            <option value="17">17''</option>
+            <option value="19">19''</option>
+            <option value="21" selected="selected">21''</option>
+
+        </select>
+
+        <label for="hd">Hard Drive</label>
+        <select id="hd" name="hd">
+            <option value="240">240 GB</option>
+            <option value="500">500 GB</option>
+            <option value="750">750 GB</option>
+            <option value="1000" selected="selected">1 TB</option>
+        </select>
+
+        <label>DVD Burner</label>
+        <fieldset class="optionGroup">
+        <label for="dYes">Yes</label>
+        <input type="radio" name="dvd" id="dYes" value="yes">
+        <label for="dNo">No</label>
+        <input type="radio" name="dvd" id="dNo" value="no">
+        </fieldset>
+
+        <label>Tuner Card</label>
+        <fieldset class="optionGroup">
+        <label for="TYes">Yes</label>
+        <input type="radio" name="tuner" id="TYes" value="yes">
+        <label for="TNo">No</label>
+        <input type="radio" name="tuner" id="TNo" value="no">
+        </fieldset>
+
+        <label>Media Card Reader</label>
+        <fieldset class="optionGroup">
+            <label for="mYes">Yes</label>
+            <input type="radio" name="mCard" id="mYes" value="yes">
+            <label for="mNo">No</label>
+            <input type="radio" name="mCard" id="mNo" value="no">
+        </fieldset>
+
+        <input type="checkbox" name="warranty" id="warranty">
+        <label for="warranty">I want the 24-month extended warranty</label>
+
+        <label for="orderComment">More information or comments on the order</label>
+        <textarea name="orderComment" id="orderComment"></textarea>
+
+    </fieldset>
+
+    <p>
+            <input type="submit" value="Send Order">
+            <input type="reset" value="Cancel Order">
+            <input type="button" value="Contact Me">
+
+    </section>
+
+    <footer>
+        <address>
+            Millennium Computers
+            954 Main Street, Worcester,
+            MA,  01610
+            (508)592-6606
+        </address>
+    </footer>
+</body>
+
+
+</html>

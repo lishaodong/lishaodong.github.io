@@ -1,0 +1,188 @@
+/*
+   Tutorial 6  Case 4
+
+   Purchase Form Style Sheet
+   Author: Joy
+   Date:   2/27/2016
+
+   Filename:         oform.css
+
+
+*/
+
+/* Validation Styles */
+input:focus {
+    background-color: rgb(128,198,238);
+}
+
+input:focus:valid {
+    background: rgb(128,198,238) url(go.png) bottom right no-repeat;
+
+    -o-background-size: contain;
+    -moz-background-size: contain;
+    -webkit-background-size: contain;
+    background-size: contain;
+}
+
+input:focus:invalid {
+    background: rgb(255,232,233) url("stop.png") bottom right no-repeat;
+
+    -o-background-size: contain;
+    -moz-background-size: contain;
+    -webkit-background-size: contain;
+    background-size: contain;
+}
+
+/* Customer information form styles */
+
+fieldset/*#customerInfo*/ {
+    width: 30%;
+    margin: 10px 20px;
+    background-color: #96d998;
+    border: 2px double #1f4758;
+
+    -moz-border-radius: 50px;
+    -webkit-border-radius: 50px;
+    border-radius: 50px;
+
+    float: left;
+}
+
+fieldset#customerInfo legend {
+    background: #423cbc ;
+    font-size: 1.2em;
+    color: white;
+    font-weight: 400;
+    letter-spacing: 2px;
+    width: 300px;
+    float: left;
+}
+
+fieldset#customerInfo input {
+    width: 150px;
+    display: block;
+    float: none;
+    margin: 30px 10px;
+
+}
+
+fieldset label {
+    display: block;
+    float: left;
+    clear: left;
+    font-family: sans-serif ;
+}
+
+fieldset#customerInfo label {
+    width: 90%;
+    margin: 10px 20px 10px 5px;
+}
+
+/* Computer Choice form styles */
+
+fieldset#choice label {
+    width: 70%;
+}
+
+
+
+fieldset#choice {
+    width: 55%;
+    margin: 10px 0;
+    background-color: #96d998;
+    border: 2px double #1f4758;
+
+    -moz-border-radius: 50px;
+    -webkit-border-radius: 50px;
+    border-radius: 50px;
+
+    float: left;
+}
+
+
+fieldset#choice legend {
+    background: #423cbc;
+    font-size: 1.2em;
+    color: white;
+    font-weight: 400;
+    letter-spacing: 2px;
+    width: 90%;
+    float: left;
+}
+
+fieldset#choice select {
+    width: 70px;
+    display: block;
+    float: right;
+    margin: 10px 30px 0 10px;
+}
+
+fieldset img {
+    width: 120px;
+    /*display: inline;*/
+    float: left;
+    clear: left;
+}
+
+fieldset.optionGroup {
+    width: 30%;
+    display: block;
+    float: left;
+    border: 0;
+}
+
+fieldset.optionGroup label {
+    display: inline;
+    float: none;
+    margin: 0 3px 0 0;
+    width: 30px;
+}
+
+fieldset.optionGroup input {
+    display: inline;
+    float: none;
+    margin: 0 20px 0 0;
+    width: 20px;
+}
+
+#orderComment {
+    width: 80%;
+    float: none;
+    height: 145px;
+    text-align: center;
+    margin: 10px auto;
+    display: block;
+}
+
+label#warranty input {
+    display: inline;
+    float: none;
+    width: 20px;
+    clear: left;
+    margin: 5px;
+}
+
+label#warranty {
+    width: 400px;
+}
+
+
+
+
+
+
+/* Button styles */
+
+form p {
+    text-align: center;
+    font-size: 1.2em;
+}
+
+form p input {
+    width: 200px;
+    float: none;
+    display: inline;
+    height: 40px;
+    font-size: 1.2em;
+}
+
