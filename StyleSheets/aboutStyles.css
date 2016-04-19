@@ -28,12 +28,18 @@ body header a {
 
 /* Logo Styles */
 
-body header img {
+body header img#logo {
     background-color:cornsilk;
     margin: 10px auto 10px auto;
     width: 60%;
     text-align: center;
+}
 
+body header img#QR {
+    display: block;
+    width: 11%;
+    float: right;
+    margin-right: 80px;
 }
 
 /* Navigation Styles */

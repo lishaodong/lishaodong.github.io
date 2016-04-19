@@ -33,8 +33,13 @@ body header img#logo {
     margin: 10px auto 10px auto;
     width: 60%;
     text-align: center;
+}
 
-
+body header img#QR {
+    display: block;
+    width: 11%;
+    float: right;
+    margin-right: 80px;
 }
 
 /* Navigation Styles */
@@ -53,6 +58,7 @@ nav ul li {
 }
 
 nav ul {
+    margin-top: 60px;
     width: 130%;
 }
 
