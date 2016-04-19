@@ -67,7 +67,7 @@ nav#horizon ul li#home {
 nav#vertical ul {
     display: block;
     float: left;
-    margin-left: -240px;
+    margin-left: -270px;
     margin-top: 20px;
     width: 20%;
     position: fixed;
@@ -76,7 +76,7 @@ nav#vertical ul {
 
 nav#vertical ul li {
     display: block;
-    width: 60%;
+    width: 50%;
     height: 25px;
     background-color: lightskyblue;
     padding: 5px;
