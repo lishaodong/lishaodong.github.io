@@ -31,13 +31,13 @@ body header a {
 body header img#logo {
     background-color:cornsilk;
     margin: 10px auto 10px auto;
-    width: 60%;
+    width: 50%;
     text-align: center;
 }
 
 body header img#QR {
     display: block;
-    width: 11%;
+    width: 9%;
     float: right;
     margin-right: 80px;
 }
@@ -59,7 +59,7 @@ nav#horizon ul li {
 
 nav#horizon ul {
     width: 130%;
-    margin-top: 60px;
+    margin-top: 30px;
 }
 
 nav#horizon ul li#home {
